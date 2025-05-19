@@ -1,4 +1,4 @@
-package com.example.addressbook.dto;
+package com.example.addressbookapp.dto;
 
 public class AddressBookDTO {
     private String name;
