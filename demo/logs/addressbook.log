@@ -1,0 +1,1465 @@
+2025-05-24 10:21:46 - Starting DemoApplication using Java 21.0.6 with PID 48792 (C:\Users\user\Documents\Java Capgemini\Address Book Application\demo\target\classes started by Padmaja in C:\Users\user\Documents\Java Capgemini\Address Book Application\demo)
+2025-05-24 10:21:46 - The following 1 profile is active: "dev"
+2025-05-24 10:21:46 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-24 10:21:46 - Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2025-05-24 10:21:46 - Tomcat initialized with port 8087 (http)
+2025-05-24 10:21:46 - Starting service [Tomcat]
+2025-05-24 10:21:46 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-24 10:21:46 - Initializing Spring embedded WebApplicationContext
+2025-05-24 10:21:46 - Root WebApplicationContext: initialization completed in 255 ms
+2025-05-24 10:21:46 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-24 10:21:46 - HHH000026: Second-level cache disabled
+2025-05-24 10:21:46 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-24 10:21:46 - HikariPool-3 - Starting...
+2025-05-24 10:21:48 - SQL Error: 1045, SQLState: 28000
+2025-05-24 10:21:48 - Access denied for user 'root'@'localhost' (using password: YES)
+2025-05-24 10:21:48 - HHH000342: Could not obtain connection to query metadata
+org.hibernate.exception.GenericJDBCException: unable to obtain isolated JDBC connection [Access denied for user 'root'@'localhost' (using password: YES)] [n/a]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:63) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:320) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.6.jar:6.2.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.6.jar:6.2.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.6.jar:6.2.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.6.jar:6.2.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1865) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1814) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.6.jar:6.2.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.6.jar:6.2.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351) ~[spring-boot-3.4.5.jar:3.4.5]
+	at com.example.addressbookapp.DemoApplication.main(DemoApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.5.jar:3.4.5]
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-5.1.0.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	... 38 common frames omitted
+2025-05-24 10:21:48 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-24 10:21:48 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (null)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-24 10:21:48 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-24 10:21:48 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 10:21:48 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-24 10:21:48 - HikariPool-3 - Starting...
+2025-05-24 10:21:49 - LiveReload server is running on port 35729
+2025-05-24 10:21:49 - Tomcat started on port 8087 (http) with context path '/'
+2025-05-24 10:21:49 - Started DemoApplication in 3.541 seconds (process running for 685.319)
+2025-05-24 10:24:12 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-24 10:24:12 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-24 10:24:12 - Graceful shutdown complete
+2025-05-24 10:24:12 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 10:24:12 - Starting DemoApplication using Java 21.0.6 with PID 48792 (C:\Users\user\Documents\Java Capgemini\Address Book Application\demo\target\classes started by Padmaja in C:\Users\user\Documents\Java Capgemini\Address Book Application\demo)
+2025-05-24 10:24:12 - The following 1 profile is active: "dev"
+2025-05-24 10:24:12 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-24 10:24:12 - Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2025-05-24 10:24:12 - Tomcat initialized with port 8087 (http)
+2025-05-24 10:24:12 - Starting service [Tomcat]
+2025-05-24 10:24:12 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-24 10:24:12 - Initializing Spring embedded WebApplicationContext
+2025-05-24 10:24:12 - Root WebApplicationContext: initialization completed in 233 ms
+2025-05-24 10:24:12 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-24 10:24:12 - HHH000026: Second-level cache disabled
+2025-05-24 10:24:12 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-24 10:24:12 - HikariPool-4 - Starting...
+2025-05-24 10:24:13 - SQL Error: 1049, SQLState: 42000
+2025-05-24 10:24:13 - Unknown database 'addressbook_db'
+2025-05-24 10:24:13 - HHH000342: Could not obtain connection to query metadata
+org.hibernate.exception.SQLGrammarException: unable to obtain isolated JDBC connection [Unknown database 'addressbook_db'] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:91) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:320) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.6.jar:6.2.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.6.jar:6.2.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.6.jar:6.2.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.6.jar:6.2.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1865) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1814) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.6.jar:6.2.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.6.jar:6.2.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351) ~[spring-boot-3.4.5.jar:3.4.5]
+	at com.example.addressbookapp.DemoApplication.main(DemoApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.5.jar:3.4.5]
+Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'addressbook_db'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-5.1.0.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	... 38 common frames omitted
+2025-05-24 10:24:13 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-24 10:24:13 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (null)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-24 10:24:13 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-24 10:24:13 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 10:24:13 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-24 10:24:13 - HikariPool-4 - Starting...
+2025-05-24 10:24:14 - LiveReload server is running on port 35729
+2025-05-24 10:24:14 - Tomcat started on port 8087 (http) with context path '/'
+2025-05-24 10:24:14 - Started DemoApplication in 2.571 seconds (process running for 830.373)
+2025-05-24 10:24:14 - Condition evaluation unchanged
+2025-05-24 10:35:26 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-24 10:35:26 - Initializing Servlet 'dispatcherServlet'
+2025-05-24 10:35:26 - Completed initialization in 1 ms
+2025-05-24 10:35:55 - Application shutdown requested.
+2025-05-24 10:35:55 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-24 10:35:55 - Graceful shutdown complete
+2025-05-24 10:35:55 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 10:36:05 - Starting DemoApplication using Java 21.0.6 with PID 57840 (C:\Users\user\Documents\Java Capgemini\Address Book Application\demo\target\classes started by Padmaja in C:\Users\user\Documents\Java Capgemini\Address Book Application\demo)
+2025-05-24 10:36:05 - The following 1 profile is active: "dev"
+2025-05-24 10:36:05 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-24 10:36:05 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-24 10:36:06 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-24 10:36:06 - Finished Spring Data repository scanning in 11 ms. Found 0 JPA repository interfaces.
+2025-05-24 10:36:06 - Tomcat initialized with port 8087 (http)
+2025-05-24 10:36:06 - Starting service [Tomcat]
+2025-05-24 10:36:06 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-24 10:36:06 - Initializing Spring embedded WebApplicationContext
+2025-05-24 10:36:06 - Root WebApplicationContext: initialization completed in 1209 ms
+2025-05-24 10:36:07 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-24 10:36:07 - HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-24 10:36:07 - HHH000026: Second-level cache disabled
+2025-05-24 10:36:07 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-24 10:36:07 - HikariPool-1 - Starting...
+2025-05-24 10:36:07 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e2c5065
+2025-05-24 10:36:07 - HikariPool-1 - Start completed.
+2025-05-24 10:36:07 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-24 10:36:08 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.33
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-24 10:36:08 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-24 10:36:08 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 10:36:08 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-24 10:36:08 - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/addressbook_db'
+2025-05-24 10:36:08 - LiveReload server is running on port 35729
+2025-05-24 10:36:08 - Tomcat started on port 8087 (http) with context path '/'
+2025-05-24 10:36:08 - Started DemoApplication in 3.673 seconds (process running for 4.449)
+2025-05-24 10:36:21 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-24 10:36:21 - Initializing Servlet 'dispatcherServlet'
+2025-05-24 10:36:21 - Completed initialization in 3 ms
+2025-05-24 10:39:49 - Restarting due to 11 class path changes (1 addition, 0 deletions, 10 modifications)
+2025-05-24 10:39:49 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-24 10:39:49 - Graceful shutdown complete
+2025-05-24 10:39:49 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 10:39:49 - HikariPool-1 - Shutdown initiated...
+2025-05-24 10:39:49 - HikariPool-1 - Shutdown completed.
+2025-05-24 10:39:49 - Starting DemoApplication using Java 21.0.6 with PID 57840 (C:\Users\user\Documents\Java Capgemini\Address Book Application\demo\target\classes started by Padmaja in C:\Users\user\Documents\Java Capgemini\Address Book Application\demo)
+2025-05-24 10:39:49 - The following 1 profile is active: "dev"
+2025-05-24 10:39:49 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-24 10:39:49 - Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2025-05-24 10:39:49 - Tomcat initialized with port 8087 (http)
+2025-05-24 10:39:49 - Starting service [Tomcat]
+2025-05-24 10:39:49 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-24 10:39:49 - Initializing Spring embedded WebApplicationContext
+2025-05-24 10:39:49 - Root WebApplicationContext: initialization completed in 266 ms
+2025-05-24 10:39:49 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-24 10:39:49 - HHH000026: Second-level cache disabled
+2025-05-24 10:39:49 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-24 10:39:49 - HikariPool-2 - Starting...
+2025-05-24 10:39:49 - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7c6c8517
+2025-05-24 10:39:49 - HikariPool-2 - Start completed.
+2025-05-24 10:39:49 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-24 10:39:49 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0.33
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-24 10:39:49 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-24 10:39:49 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 10:39:49 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-24 10:39:49 - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/addressbook_db'
+2025-05-24 10:39:50 - LiveReload server is running on port 35729
+2025-05-24 10:39:50 - Tomcat started on port 8087 (http) with context path '/'
+2025-05-24 10:39:50 - Started DemoApplication in 0.513 seconds (process running for 225.592)
+2025-05-24 10:39:50 - Condition evaluation unchanged
+2025-05-24 10:40:17 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-24 10:40:17 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-24 10:40:17 - Graceful shutdown complete
+2025-05-24 10:40:17 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 10:40:17 - HikariPool-2 - Shutdown initiated...
+2025-05-24 10:40:17 - HikariPool-2 - Shutdown completed.
+2025-05-24 10:40:17 - Starting DemoApplication using Java 21.0.6 with PID 57840 (C:\Users\user\Documents\Java Capgemini\Address Book Application\demo\target\classes started by Padmaja in C:\Users\user\Documents\Java Capgemini\Address Book Application\demo)
+2025-05-24 10:40:17 - The following 1 profile is active: "dev"
+2025-05-24 10:40:17 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-24 10:40:17 - Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2025-05-24 10:40:17 - Tomcat initialized with port 8087 (http)
+2025-05-24 10:40:17 - Starting service [Tomcat]
+2025-05-24 10:40:17 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-24 10:40:17 - Initializing Spring embedded WebApplicationContext
+2025-05-24 10:40:17 - Root WebApplicationContext: initialization completed in 305 ms
+2025-05-24 10:40:17 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-24 10:40:17 - HHH000026: Second-level cache disabled
+2025-05-24 10:40:17 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-24 10:40:17 - HikariPool-3 - Starting...
+2025-05-24 10:40:17 - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f877f26
+2025-05-24 10:40:17 - HikariPool-3 - Start completed.
+2025-05-24 10:40:17 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-24 10:40:17 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.0.33
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-24 10:40:17 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-24 10:40:17 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 10:40:17 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-24 10:40:17 - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/addressbook_db'
+2025-05-24 10:40:17 - LiveReload server is running on port 35729
+2025-05-24 10:40:17 - Tomcat started on port 8087 (http) with context path '/'
+2025-05-24 10:40:17 - Started DemoApplication in 0.564 seconds (process running for 253.21)
+2025-05-24 10:40:17 - Condition evaluation unchanged
+2025-05-24 10:40:21 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-24 10:40:21 - Initializing Servlet 'dispatcherServlet'
+2025-05-24 10:40:21 - Completed initialization in 2 ms
+2025-05-24 10:42:56 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-24 10:42:56 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-24 10:42:56 - Graceful shutdown complete
+2025-05-24 10:42:56 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 10:42:56 - HikariPool-3 - Shutdown initiated...
+2025-05-24 10:42:56 - HikariPool-3 - Shutdown completed.
+2025-05-24 10:42:56 - Starting DemoApplication using Java 21.0.6 with PID 57840 (C:\Users\user\Documents\Java Capgemini\Address Book Application\demo\target\classes started by Padmaja in C:\Users\user\Documents\Java Capgemini\Address Book Application\demo)
+2025-05-24 10:42:56 - The following 1 profile is active: "dev"
+2025-05-24 10:42:57 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-24 10:42:57 - Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2025-05-24 10:42:57 - Tomcat initialized with port 8087 (http)
+2025-05-24 10:42:57 - Starting service [Tomcat]
+2025-05-24 10:42:57 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-24 10:42:57 - Initializing Spring embedded WebApplicationContext
+2025-05-24 10:42:57 - Root WebApplicationContext: initialization completed in 227 ms
+2025-05-24 10:42:57 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-24 10:42:57 - HHH000026: Second-level cache disabled
+2025-05-24 10:42:57 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-24 10:42:57 - HikariPool-4 - Starting...
+2025-05-24 10:42:57 - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@10bf3906
+2025-05-24 10:42:57 - HikariPool-4 - Start completed.
+2025-05-24 10:42:57 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-24 10:42:57 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 8.0.33
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-24 10:42:57 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-24 10:42:57 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 10:42:57 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-24 10:42:57 - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/addressbook_db'
+2025-05-24 10:42:57 - LiveReload server is running on port 35729
+2025-05-24 10:42:57 - Tomcat started on port 8087 (http) with context path '/'
+2025-05-24 10:42:57 - Started DemoApplication in 0.444 seconds (process running for 412.844)
+2025-05-24 10:43:03 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-24 10:43:03 - Initializing Servlet 'dispatcherServlet'
+2025-05-24 10:43:03 - Completed initialization in 2 ms
+2025-05-24 10:47:45 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-24 10:47:45 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-24 10:47:45 - Graceful shutdown complete
+2025-05-24 10:47:45 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 10:47:45 - HikariPool-4 - Shutdown initiated...
+2025-05-24 10:47:45 - HikariPool-4 - Shutdown completed.
+2025-05-24 10:47:45 - Starting DemoApplication using Java 21.0.6 with PID 57840 (C:\Users\user\Documents\Java Capgemini\Address Book Application\demo\target\classes started by Padmaja in C:\Users\user\Documents\Java Capgemini\Address Book Application\demo)
+2025-05-24 10:47:45 - The following 1 profile is active: "dev"
+2025-05-24 10:47:45 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-24 10:47:45 - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2025-05-24 10:47:45 - Tomcat initialized with port 8087 (http)
+2025-05-24 10:47:45 - Starting service [Tomcat]
+2025-05-24 10:47:45 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-24 10:47:45 - Initializing Spring embedded WebApplicationContext
+2025-05-24 10:47:45 - Root WebApplicationContext: initialization completed in 218 ms
+2025-05-24 10:47:45 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-24 10:47:45 - HHH000026: Second-level cache disabled
+2025-05-24 10:47:45 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-24 10:47:45 - HikariPool-5 - Starting...
+2025-05-24 10:47:45 - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1a3c5836
+2025-05-24 10:47:45 - HikariPool-5 - Start completed.
+2025-05-24 10:47:45 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-24 10:47:45 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 8.0.33
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-24 10:47:45 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-24 10:47:45 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 10:47:45 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-24 10:47:45 - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/addressbook_db'
+2025-05-24 10:47:45 - LiveReload server is running on port 35729
+2025-05-24 10:47:45 - Tomcat started on port 8087 (http) with context path '/'
+2025-05-24 10:47:45 - Started DemoApplication in 0.413 seconds (process running for 701.081)
+2025-05-24 10:47:45 - Condition evaluation unchanged
+2025-05-24 10:48:21 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-24 10:48:21 - Initializing Servlet 'dispatcherServlet'
+2025-05-24 10:48:21 - Completed initialization in 1 ms
+2025-05-24 10:50:48 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-24 10:50:48 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-24 10:50:48 - Graceful shutdown complete
+2025-05-24 10:50:48 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 10:50:48 - HikariPool-5 - Shutdown initiated...
+2025-05-24 10:50:48 - HikariPool-5 - Shutdown completed.
+2025-05-24 10:50:48 - Starting DemoApplication using Java 21.0.6 with PID 57840 (C:\Users\user\Documents\Java Capgemini\Address Book Application\demo\target\classes started by Padmaja in C:\Users\user\Documents\Java Capgemini\Address Book Application\demo)
+2025-05-24 10:50:48 - The following 1 profile is active: "dev"
+2025-05-24 10:50:48 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-24 10:50:48 - Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2025-05-24 10:50:48 - Tomcat initialized with port 8087 (http)
+2025-05-24 10:50:48 - Starting service [Tomcat]
+2025-05-24 10:50:48 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-24 10:50:48 - Initializing Spring embedded WebApplicationContext
+2025-05-24 10:50:48 - Root WebApplicationContext: initialization completed in 237 ms
+2025-05-24 10:50:48 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-24 10:50:48 - HHH000026: Second-level cache disabled
+2025-05-24 10:50:48 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-24 10:50:48 - HikariPool-6 - Starting...
+2025-05-24 10:50:48 - HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4cd0fdfa
+2025-05-24 10:50:48 - HikariPool-6 - Start completed.
+2025-05-24 10:50:48 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-24 10:50:48 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
+	Database driver: undefined/unknown
+	Database version: 8.0.33
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-24 10:50:48 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-24 10:50:48 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 10:50:48 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'addressBookController': Lookup method resolution failed
+2025-05-24 10:50:48 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 10:50:48 - HikariPool-6 - Shutdown initiated...
+2025-05-24 10:50:48 - HikariPool-6 - Shutdown completed.
+2025-05-24 10:50:48 - Stopping service [Tomcat]
+2025-05-24 10:50:48 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-05-24 10:50:48 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'addressBookController': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1221) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1221) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1187) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1122) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.6.jar:6.2.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.6.jar:6.2.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351) ~[spring-boot-3.4.5.jar:3.4.5]
+	at com.example.addressbookapp.DemoApplication.main(DemoApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.5.jar:3.4.5]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.example.addressbookapp.controller.AddressBookController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@3f39edd3]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483) ~[spring-core-6.2.6.jar:6.2.6]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320) ~[spring-core-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476) ~[spring-beans-6.2.6.jar:6.2.6]
+	... 24 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: AddressBookDTO
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3578) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2676) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465) ~[spring-core-6.2.6.jar:6.2.6]
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: AddressBookDTO
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:534) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:513) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.4.5.jar:3.4.5]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	... 30 common frames omitted
+2025-05-24 10:52:47 - Starting DemoApplication using Java 21.0.6 with PID 57840 (C:\Users\user\Documents\Java Capgemini\Address Book Application\demo\target\classes started by Padmaja in C:\Users\user\Documents\Java Capgemini\Address Book Application\demo)
+2025-05-24 10:52:47 - The following 1 profile is active: "dev"
+2025-05-24 10:52:47 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-24 10:52:47 - Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2025-05-24 10:52:47 - Tomcat initialized with port 8087 (http)
+2025-05-24 10:52:47 - Starting service [Tomcat]
+2025-05-24 10:52:47 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-24 10:52:47 - Initializing Spring embedded WebApplicationContext
+2025-05-24 10:52:47 - Root WebApplicationContext: initialization completed in 254 ms
+2025-05-24 10:52:47 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-24 10:52:47 - HHH000026: Second-level cache disabled
+2025-05-24 10:52:47 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-24 10:52:47 - HikariPool-7 - Starting...
+2025-05-24 10:52:47 - HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6e068778
+2025-05-24 10:52:47 - HikariPool-7 - Start completed.
+2025-05-24 10:52:47 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-24 10:52:47 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-7)']
+	Database driver: undefined/unknown
+	Database version: 8.0.33
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-24 10:52:47 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-24 10:52:47 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 10:52:47 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-24 10:52:47 - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/addressbook_db'
+2025-05-24 10:52:47 - LiveReload server is running on port 35729
+2025-05-24 10:52:47 - Tomcat started on port 8087 (http) with context path '/'
+2025-05-24 10:52:47 - Started DemoApplication in 0.496 seconds (process running for 1003.06)
+2025-05-24 10:52:47 - Condition evaluation unchanged
+2025-05-24 10:52:49 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-24 10:52:49 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-24 10:52:49 - Graceful shutdown complete
+2025-05-24 10:52:49 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 10:52:49 - HikariPool-7 - Shutdown initiated...
+2025-05-24 10:52:49 - HikariPool-7 - Shutdown completed.
+2025-05-24 10:52:50 - Starting DemoApplication using Java 21.0.6 with PID 57840 (C:\Users\user\Documents\Java Capgemini\Address Book Application\demo\target\classes started by Padmaja in C:\Users\user\Documents\Java Capgemini\Address Book Application\demo)
+2025-05-24 10:52:50 - The following 1 profile is active: "dev"
+2025-05-24 10:52:50 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-24 10:52:50 - Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2025-05-24 10:52:50 - Tomcat initialized with port 8087 (http)
+2025-05-24 10:52:50 - Starting service [Tomcat]
+2025-05-24 10:52:50 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-24 10:52:50 - Initializing Spring embedded WebApplicationContext
+2025-05-24 10:52:50 - Root WebApplicationContext: initialization completed in 205 ms
+2025-05-24 10:52:50 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-24 10:52:50 - HHH000026: Second-level cache disabled
+2025-05-24 10:52:50 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-24 10:52:50 - HikariPool-8 - Starting...
+2025-05-24 10:52:50 - HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@48b4fe6c
+2025-05-24 10:52:50 - HikariPool-8 - Start completed.
+2025-05-24 10:52:50 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-24 10:52:50 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-8)']
+	Database driver: undefined/unknown
+	Database version: 8.0.33
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-24 10:52:50 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-24 10:52:50 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 10:52:50 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-24 10:52:50 - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/addressbook_db'
+2025-05-24 10:52:50 - LiveReload server is running on port 35729
+2025-05-24 10:52:50 - Tomcat started on port 8087 (http) with context path '/'
+2025-05-24 10:52:50 - Started DemoApplication in 0.413 seconds (process running for 1005.966)
+2025-05-24 10:52:50 - Condition evaluation unchanged
+2025-05-24 10:53:13 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-24 10:53:13 - Initializing Servlet 'dispatcherServlet'
+2025-05-24 10:53:13 - Completed initialization in 1 ms
+2025-05-24 10:56:00 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-24 10:56:00 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-24 10:56:00 - Graceful shutdown complete
+2025-05-24 10:56:00 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 10:56:00 - HikariPool-8 - Shutdown initiated...
+2025-05-24 10:56:00 - HikariPool-8 - Shutdown completed.
+2025-05-24 10:56:00 - Starting DemoApplication using Java 21.0.6 with PID 57840 (C:\Users\user\Documents\Java Capgemini\Address Book Application\demo\target\classes started by Padmaja in C:\Users\user\Documents\Java Capgemini\Address Book Application\demo)
+2025-05-24 10:56:00 - The following 1 profile is active: "dev"
+2025-05-24 10:56:00 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-24 10:56:00 - Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2025-05-24 10:56:00 - Tomcat initialized with port 8087 (http)
+2025-05-24 10:56:00 - Starting service [Tomcat]
+2025-05-24 10:56:00 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-24 10:56:00 - Initializing Spring embedded WebApplicationContext
+2025-05-24 10:56:00 - Root WebApplicationContext: initialization completed in 225 ms
+2025-05-24 10:56:00 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-24 10:56:00 - HHH000026: Second-level cache disabled
+2025-05-24 10:56:00 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-24 10:56:00 - HikariPool-9 - Starting...
+2025-05-24 10:56:00 - HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@30334bf4
+2025-05-24 10:56:00 - HikariPool-9 - Start completed.
+2025-05-24 10:56:00 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-24 10:56:00 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-9)']
+	Database driver: undefined/unknown
+	Database version: 8.0.33
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-24 10:56:00 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-24 10:56:00 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 10:56:00 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-24 10:56:00 - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/addressbook_db'
+2025-05-24 10:56:00 - LiveReload server is running on port 35729
+2025-05-24 10:56:00 - Tomcat started on port 8087 (http) with context path '/'
+2025-05-24 10:56:00 - Started DemoApplication in 0.46 seconds (process running for 1196.28)
+2025-05-24 10:56:00 - Condition evaluation unchanged
+2025-05-24 10:56:04 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-24 10:56:04 - Initializing Servlet 'dispatcherServlet'
+2025-05-24 10:56:04 - Completed initialization in 1 ms
+2025-05-24 10:56:28 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-24 10:56:28 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-24 10:56:28 - Graceful shutdown complete
+2025-05-24 10:56:28 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 10:56:28 - HikariPool-9 - Shutdown initiated...
+2025-05-24 10:56:28 - HikariPool-9 - Shutdown completed.
+2025-05-24 22:07:07 - Starting DemoApplication using Java 21.0.6 with PID 15284 (C:\Users\user\Documents\Java Capgemini\Address Book Application\demo\target\classes started by Padmaja in C:\Users\user\Documents\Java Capgemini\Address Book Application\demo)
+2025-05-24 22:07:07 - The following 1 profile is active: "dev"
+2025-05-24 22:07:07 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-24 22:07:07 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-24 22:07:08 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-24 22:07:08 - Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+2025-05-24 22:07:08 - Tomcat initialized with port 8087 (http)
+2025-05-24 22:07:09 - Starting service [Tomcat]
+2025-05-24 22:07:09 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-24 22:07:09 - Initializing Spring embedded WebApplicationContext
+2025-05-24 22:07:09 - Root WebApplicationContext: initialization completed in 1422 ms
+2025-05-24 22:07:09 - HikariPool-1 - Starting...
+2025-05-24 22:07:09 - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:7e2d797e-4509-46ef-8a69-53a0883d1cda user=SA
+2025-05-24 22:07:09 - HikariPool-1 - Start completed.
+2025-05-24 22:07:09 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-24 22:07:09 - HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-24 22:07:09 - HHH000026: Second-level cache disabled
+2025-05-24 22:07:10 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-24 22:07:10 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-24 22:07:10 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-24 22:07:10 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 22:07:10 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-24 22:07:10 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:7e2d797e-4509-46ef-8a69-53a0883d1cda'
+2025-05-24 22:07:11 - LiveReload server is running on port 35729
+2025-05-24 22:07:11 - Tomcat started on port 8087 (http) with context path '/'
+2025-05-24 22:07:11 - Started DemoApplication in 4.033 seconds (process running for 5.261)
+2025-05-24 22:08:04 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-24 22:08:04 - Initializing Servlet 'dispatcherServlet'
+2025-05-24 22:08:04 - Completed initialization in 1 ms
+2025-05-24 22:12:04 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2025-05-24 22:15:55 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-24 22:15:55 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-24 22:15:55 - Graceful shutdown complete
+2025-05-24 22:15:55 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 22:15:55 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-05-24 22:15:55 - HikariPool-1 - Shutdown initiated...
+2025-05-24 22:15:55 - HikariPool-1 - Shutdown completed.
+2025-05-24 22:15:55 - Starting DemoApplication using Java 21.0.6 with PID 15284 (C:\Users\user\Documents\Java Capgemini\Address Book Application\demo\target\classes started by Padmaja in C:\Users\user\Documents\Java Capgemini\Address Book Application\demo)
+2025-05-24 22:15:55 - The following 1 profile is active: "dev"
+2025-05-24 22:15:55 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-24 22:15:55 - Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2025-05-24 22:15:55 - Tomcat initialized with port 8087 (http)
+2025-05-24 22:15:55 - Starting service [Tomcat]
+2025-05-24 22:15:55 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-24 22:15:55 - Initializing Spring embedded WebApplicationContext
+2025-05-24 22:15:55 - Root WebApplicationContext: initialization completed in 295 ms
+2025-05-24 22:15:55 - HikariPool-2 - Starting...
+2025-05-24 22:15:55 - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:6a02e22c-80a3-40e5-ba5a-4c9c99e0e261 user=SA
+2025-05-24 22:15:55 - HikariPool-2 - Start completed.
+2025-05-24 22:15:55 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-24 22:15:55 - HHH000026: Second-level cache disabled
+2025-05-24 22:15:55 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-24 22:15:55 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-24 22:15:55 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-24 22:15:55 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 22:15:56 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'addressBookController': Lookup method resolution failed
+2025-05-24 22:15:56 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 22:15:56 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-05-24 22:15:56 - HikariPool-2 - Shutdown initiated...
+2025-05-24 22:15:56 - HikariPool-2 - Shutdown completed.
+2025-05-24 22:15:56 - Stopping service [Tomcat]
+2025-05-24 22:15:56 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-05-24 22:15:56 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'addressBookController': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1221) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1221) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1187) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1122) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.6.jar:6.2.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.6.jar:6.2.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351) ~[spring-boot-3.4.5.jar:3.4.5]
+	at com.example.addressbookapp.DemoApplication.main(DemoApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.5.jar:3.4.5]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.example.addressbookapp.controller.AddressBookController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@56550b84]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483) ~[spring-core-6.2.6.jar:6.2.6]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320) ~[spring-core-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476) ~[spring-beans-6.2.6.jar:6.2.6]
+	... 24 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: AddressBookDTO
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3578) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2676) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465) ~[spring-core-6.2.6.jar:6.2.6]
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: AddressBookDTO
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:534) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:513) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.4.5.jar:3.4.5]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	... 30 common frames omitted
+2025-05-24 22:16:44 - Starting DemoApplication using Java 21.0.6 with PID 15284 (C:\Users\user\Documents\Java Capgemini\Address Book Application\demo\target\classes started by Padmaja in C:\Users\user\Documents\Java Capgemini\Address Book Application\demo)
+2025-05-24 22:16:44 - The following 1 profile is active: "dev"
+2025-05-24 22:16:44 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-24 22:16:44 - Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2025-05-24 22:16:44 - Tomcat initialized with port 8087 (http)
+2025-05-24 22:16:44 - Starting service [Tomcat]
+2025-05-24 22:16:44 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-24 22:16:44 - Initializing Spring embedded WebApplicationContext
+2025-05-24 22:16:44 - Root WebApplicationContext: initialization completed in 279 ms
+2025-05-24 22:16:44 - HikariPool-3 - Starting...
+2025-05-24 22:16:44 - HikariPool-3 - Added connection conn11: url=jdbc:h2:mem:d72d87e9-fa19-420b-bbf1-4a2374bacd79 user=SA
+2025-05-24 22:16:44 - HikariPool-3 - Start completed.
+2025-05-24 22:16:44 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-24 22:16:44 - HHH000026: Second-level cache disabled
+2025-05-24 22:16:44 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-24 22:16:44 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-24 22:16:44 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-24 22:16:44 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 22:16:44 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'addressBookController': Lookup method resolution failed
+2025-05-24 22:16:44 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 22:16:44 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-05-24 22:16:44 - HikariPool-3 - Shutdown initiated...
+2025-05-24 22:16:44 - HikariPool-3 - Shutdown completed.
+2025-05-24 22:16:44 - Stopping service [Tomcat]
+2025-05-24 22:16:44 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-05-24 22:16:44 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'addressBookController': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1221) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1221) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1187) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1122) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.6.jar:6.2.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.6.jar:6.2.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351) ~[spring-boot-3.4.5.jar:3.4.5]
+	at com.example.addressbookapp.DemoApplication.main(DemoApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.5.jar:3.4.5]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.example.addressbookapp.controller.AddressBookController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@19724e13]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483) ~[spring-core-6.2.6.jar:6.2.6]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320) ~[spring-core-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476) ~[spring-beans-6.2.6.jar:6.2.6]
+	... 24 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: AddressBookDTO
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3578) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2676) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465) ~[spring-core-6.2.6.jar:6.2.6]
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: AddressBookDTO
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:534) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:513) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.4.5.jar:3.4.5]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	... 30 common frames omitted
+2025-05-24 22:16:48 - Starting DemoApplication using Java 21.0.6 with PID 15284 (C:\Users\user\Documents\Java Capgemini\Address Book Application\demo\target\classes started by Padmaja in C:\Users\user\Documents\Java Capgemini\Address Book Application\demo)
+2025-05-24 22:16:48 - The following 1 profile is active: "dev"
+2025-05-24 22:16:48 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-24 22:16:48 - Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2025-05-24 22:16:48 - Tomcat initialized with port 8087 (http)
+2025-05-24 22:16:48 - Starting service [Tomcat]
+2025-05-24 22:16:48 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-24 22:16:48 - Initializing Spring embedded WebApplicationContext
+2025-05-24 22:16:48 - Root WebApplicationContext: initialization completed in 254 ms
+2025-05-24 22:16:48 - HikariPool-4 - Starting...
+2025-05-24 22:16:48 - HikariPool-4 - Added connection conn12: url=jdbc:h2:mem:9831251f-fdf5-4a83-9462-32a6b0f3ec54 user=SA
+2025-05-24 22:16:48 - HikariPool-4 - Start completed.
+2025-05-24 22:16:48 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-24 22:16:48 - HHH000026: Second-level cache disabled
+2025-05-24 22:16:48 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-24 22:16:48 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-24 22:16:48 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-24 22:16:48 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 22:16:48 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'addressBookController': Lookup method resolution failed
+2025-05-24 22:16:48 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 22:16:48 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-05-24 22:16:48 - HikariPool-4 - Shutdown initiated...
+2025-05-24 22:16:48 - HikariPool-4 - Shutdown completed.
+2025-05-24 22:16:48 - Stopping service [Tomcat]
+2025-05-24 22:16:48 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-05-24 22:16:48 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'addressBookController': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1221) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1221) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1187) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1122) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.6.jar:6.2.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.6.jar:6.2.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351) ~[spring-boot-3.4.5.jar:3.4.5]
+	at com.example.addressbookapp.DemoApplication.main(DemoApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.5.jar:3.4.5]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.example.addressbookapp.controller.AddressBookController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@67fca5a6]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483) ~[spring-core-6.2.6.jar:6.2.6]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320) ~[spring-core-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476) ~[spring-beans-6.2.6.jar:6.2.6]
+	... 24 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: AddressBookDTO
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3578) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2676) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465) ~[spring-core-6.2.6.jar:6.2.6]
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: AddressBookDTO
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:534) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:513) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.4.5.jar:3.4.5]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	... 30 common frames omitted
+2025-05-24 22:16:53 - Starting DemoApplication using Java 21.0.6 with PID 15284 (C:\Users\user\Documents\Java Capgemini\Address Book Application\demo\target\classes started by Padmaja in C:\Users\user\Documents\Java Capgemini\Address Book Application\demo)
+2025-05-24 22:16:53 - The following 1 profile is active: "dev"
+2025-05-24 22:16:53 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-24 22:16:53 - Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2025-05-24 22:16:53 - Tomcat initialized with port 8087 (http)
+2025-05-24 22:16:53 - Starting service [Tomcat]
+2025-05-24 22:16:53 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-24 22:16:53 - Initializing Spring embedded WebApplicationContext
+2025-05-24 22:16:53 - Root WebApplicationContext: initialization completed in 240 ms
+2025-05-24 22:16:53 - HikariPool-5 - Starting...
+2025-05-24 22:16:53 - HikariPool-5 - Added connection conn13: url=jdbc:h2:mem:ec0bb1fb-980c-4408-97a8-89f24c906178 user=SA
+2025-05-24 22:16:53 - HikariPool-5 - Start completed.
+2025-05-24 22:16:53 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-24 22:16:53 - HHH000026: Second-level cache disabled
+2025-05-24 22:16:53 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-24 22:16:53 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-24 22:16:53 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-24 22:16:53 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 22:16:53 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-24 22:16:53 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:ec0bb1fb-980c-4408-97a8-89f24c906178'
+2025-05-24 22:16:53 - LiveReload server is running on port 35729
+2025-05-24 22:16:53 - Tomcat started on port 8087 (http) with context path '/'
+2025-05-24 22:16:53 - Started DemoApplication in 0.586 seconds (process running for 588.018)
+2025-05-24 22:16:53 - Condition evaluation unchanged
+2025-05-24 22:17:44 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-24 22:17:44 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-24 22:17:44 - Graceful shutdown complete
+2025-05-24 22:17:44 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 22:17:44 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-05-24 22:17:44 - HikariPool-5 - Shutdown initiated...
+2025-05-24 22:17:44 - HikariPool-5 - Shutdown completed.
+2025-05-24 22:17:44 - Starting DemoApplication using Java 21.0.6 with PID 15284 (C:\Users\user\Documents\Java Capgemini\Address Book Application\demo\target\classes started by Padmaja in C:\Users\user\Documents\Java Capgemini\Address Book Application\demo)
+2025-05-24 22:17:44 - The following 1 profile is active: "dev"
+2025-05-24 22:17:44 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-24 22:17:44 - Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2025-05-24 22:17:44 - Tomcat initialized with port 8087 (http)
+2025-05-24 22:17:44 - Starting service [Tomcat]
+2025-05-24 22:17:44 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-24 22:17:44 - Initializing Spring embedded WebApplicationContext
+2025-05-24 22:17:44 - Root WebApplicationContext: initialization completed in 234 ms
+2025-05-24 22:17:44 - HikariPool-6 - Starting...
+2025-05-24 22:17:44 - HikariPool-6 - Added connection conn23: url=jdbc:h2:mem:fefed81c-b939-46f8-9cd3-0bb6a91d76f5 user=SA
+2025-05-24 22:17:44 - HikariPool-6 - Start completed.
+2025-05-24 22:17:44 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-24 22:17:44 - HHH000026: Second-level cache disabled
+2025-05-24 22:17:44 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-24 22:17:44 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-24 22:17:44 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-24 22:17:44 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 22:17:44 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-24 22:17:44 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:fefed81c-b939-46f8-9cd3-0bb6a91d76f5'
+2025-05-24 22:17:44 - LiveReload server is running on port 35729
+2025-05-24 22:17:44 - Tomcat started on port 8087 (http) with context path '/'
+2025-05-24 22:17:44 - Started DemoApplication in 0.475 seconds (process running for 638.979)
+2025-05-24 22:17:44 - Condition evaluation unchanged
+2025-05-24 22:17:54 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-24 22:17:54 - Initializing Servlet 'dispatcherServlet'
+2025-05-24 22:17:54 - Completed initialization in 2 ms
+2025-05-24 22:18:02 - Starting DemoApplication using Java 21.0.6 with PID 59576 (C:\Users\user\Documents\Java Capgemini\Address Book Application\demo\target\classes started by Padmaja in C:\Users\user\Documents\Java Capgemini\Address Book Application\demo)
+2025-05-24 22:18:02 - The following 1 profile is active: "dev"
+2025-05-24 22:18:02 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-24 22:18:02 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-24 22:18:02 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-24 22:18:02 - Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+2025-05-24 22:18:03 - Tomcat initialized with port 8087 (http)
+2025-05-24 22:18:03 - Starting service [Tomcat]
+2025-05-24 22:18:03 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-24 22:18:03 - Initializing Spring embedded WebApplicationContext
+2025-05-24 22:18:03 - Root WebApplicationContext: initialization completed in 1252 ms
+2025-05-24 22:18:03 - HikariPool-1 - Starting...
+2025-05-24 22:18:03 - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:3c2af964-d3f8-4c40-9f7c-d49b556cf208 user=SA
+2025-05-24 22:18:03 - HikariPool-1 - Start completed.
+2025-05-24 22:18:03 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-24 22:18:03 - HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-24 22:18:04 - HHH000026: Second-level cache disabled
+2025-05-24 22:18:04 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-24 22:18:04 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-24 22:18:04 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-24 22:18:04 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 22:18:04 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-24 22:18:05 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:3c2af964-d3f8-4c40-9f7c-d49b556cf208'
+2025-05-24 22:18:05 - Unable to start LiveReload server
+2025-05-24 22:18:05 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-05-24 22:18:05 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 22:18:05 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-05-24 22:18:05 - HikariPool-1 - Shutdown initiated...
+2025-05-24 22:18:05 - HikariPool-1 - Shutdown completed.
+2025-05-24 22:18:05 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-05-24 22:18:05 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8087 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8087 or configure this application to listen on another port.
+
+2025-05-24 22:18:28 - Restarting due to 10 class path changes (0 additions, 0 deletions, 10 modifications)
+2025-05-24 22:18:28 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-24 22:18:28 - Graceful shutdown complete
+2025-05-24 22:18:28 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 22:18:28 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-05-24 22:18:28 - HikariPool-6 - Shutdown initiated...
+2025-05-24 22:18:28 - HikariPool-6 - Shutdown completed.
+2025-05-24 22:18:28 - Starting DemoApplication using Java 21.0.6 with PID 15284 (C:\Users\user\Documents\Java Capgemini\Address Book Application\demo\target\classes started by Padmaja in C:\Users\user\Documents\Java Capgemini\Address Book Application\demo)
+2025-05-24 22:18:28 - The following 1 profile is active: "dev"
+2025-05-24 22:18:28 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-24 22:18:28 - Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2025-05-24 22:18:29 - Tomcat initialized with port 8087 (http)
+2025-05-24 22:18:29 - Starting service [Tomcat]
+2025-05-24 22:18:29 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-24 22:18:29 - Initializing Spring embedded WebApplicationContext
+2025-05-24 22:18:29 - Root WebApplicationContext: initialization completed in 262 ms
+2025-05-24 22:18:29 - HikariPool-7 - Starting...
+2025-05-24 22:18:29 - HikariPool-7 - Added connection conn33: url=jdbc:h2:mem:9aec6d68-b86e-4c89-85b4-fc6fd523d503 user=SA
+2025-05-24 22:18:29 - HikariPool-7 - Start completed.
+2025-05-24 22:18:29 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-24 22:18:29 - HHH000026: Second-level cache disabled
+2025-05-24 22:18:29 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-24 22:18:29 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-7)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-24 22:18:29 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-24 22:18:29 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 22:18:29 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-24 22:18:29 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:9aec6d68-b86e-4c89-85b4-fc6fd523d503'
+2025-05-24 22:18:29 - LiveReload server is running on port 35729
+2025-05-24 22:18:29 - Tomcat started on port 8087 (http) with context path '/'
+2025-05-24 22:18:29 - Started DemoApplication in 0.514 seconds (process running for 683.388)
+2025-05-24 22:18:29 - Condition evaluation unchanged
+2025-05-24 22:18:33 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-24 22:18:33 - Initializing Servlet 'dispatcherServlet'
+2025-05-24 22:18:33 - Completed initialization in 2 ms
+2025-05-24 22:21:34 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-24 22:21:34 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-24 22:21:34 - Graceful shutdown complete
+2025-05-24 22:21:34 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 22:21:34 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-05-24 22:21:34 - HikariPool-7 - Shutdown initiated...
+2025-05-24 22:21:34 - HikariPool-7 - Shutdown completed.
+2025-05-24 22:21:34 - Starting DemoApplication using Java 21.0.6 with PID 15284 (C:\Users\user\Documents\Java Capgemini\Address Book Application\demo\target\classes started by Padmaja in C:\Users\user\Documents\Java Capgemini\Address Book Application\demo)
+2025-05-24 22:21:34 - The following 1 profile is active: "dev"
+2025-05-24 22:21:34 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-24 22:21:34 - Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2025-05-24 22:21:34 - Tomcat initialized with port 8087 (http)
+2025-05-24 22:21:34 - Starting service [Tomcat]
+2025-05-24 22:21:34 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-24 22:21:34 - Initializing Spring embedded WebApplicationContext
+2025-05-24 22:21:34 - Root WebApplicationContext: initialization completed in 248 ms
+2025-05-24 22:21:34 - HikariPool-8 - Starting...
+2025-05-24 22:21:34 - HikariPool-8 - Added connection conn43: url=jdbc:h2:mem:a82e4f8f-039b-4425-8502-ef78730d9a3c user=SA
+2025-05-24 22:21:34 - HikariPool-8 - Start completed.
+2025-05-24 22:21:34 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-24 22:21:34 - HHH000026: Second-level cache disabled
+2025-05-24 22:21:34 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-24 22:21:34 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-8)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-24 22:21:34 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-24 22:21:34 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 22:21:34 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-24 22:21:34 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:a82e4f8f-039b-4425-8502-ef78730d9a3c'
+2025-05-24 22:21:34 - LiveReload server is running on port 35729
+2025-05-24 22:21:34 - Tomcat started on port 8087 (http) with context path '/'
+2025-05-24 22:21:34 - Started DemoApplication in 0.492 seconds (process running for 868.888)
+2025-05-24 22:21:34 - Condition evaluation unchanged
+2025-05-24 22:23:15 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-24 22:23:15 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-24 22:23:15 - Graceful shutdown complete
+2025-05-24 22:23:15 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 22:23:15 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-05-24 22:23:15 - HikariPool-8 - Shutdown initiated...
+2025-05-24 22:23:15 - HikariPool-8 - Shutdown completed.
+2025-05-24 22:23:15 - Starting DemoApplication using Java 21.0.6 with PID 15284 (C:\Users\user\Documents\Java Capgemini\Address Book Application\demo\target\classes started by Padmaja in C:\Users\user\Documents\Java Capgemini\Address Book Application\demo)
+2025-05-24 22:23:15 - The following 1 profile is active: "dev"
+2025-05-24 22:23:15 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-24 22:23:15 - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2025-05-24 22:23:15 - Tomcat initialized with port 8087 (http)
+2025-05-24 22:23:15 - Starting service [Tomcat]
+2025-05-24 22:23:15 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-24 22:23:15 - Initializing Spring embedded WebApplicationContext
+2025-05-24 22:23:15 - Root WebApplicationContext: initialization completed in 237 ms
+2025-05-24 22:23:15 - HikariPool-9 - Starting...
+2025-05-24 22:23:15 - HikariPool-9 - Added connection conn53: url=jdbc:h2:mem:772bdd4e-67b9-4780-be07-94c196ae01b4 user=SA
+2025-05-24 22:23:15 - HikariPool-9 - Start completed.
+2025-05-24 22:23:15 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-24 22:23:15 - HHH000026: Second-level cache disabled
+2025-05-24 22:23:15 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-24 22:23:15 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-9)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-24 22:23:15 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-24 22:23:15 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 22:23:15 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-24 22:23:15 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:772bdd4e-67b9-4780-be07-94c196ae01b4'
+2025-05-24 22:23:15 - LiveReload server is running on port 35729
+2025-05-24 22:23:15 - Tomcat started on port 8087 (http) with context path '/'
+2025-05-24 22:23:15 - Started DemoApplication in 0.472 seconds (process running for 969.966)
+2025-05-24 22:23:15 - Condition evaluation unchanged
+2025-05-24 22:24:18 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-24 22:24:18 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-24 22:24:18 - Graceful shutdown complete
+2025-05-24 22:24:18 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 22:24:18 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-05-24 22:24:18 - HikariPool-9 - Shutdown initiated...
+2025-05-24 22:24:18 - HikariPool-9 - Shutdown completed.
+2025-05-24 22:24:18 - Starting DemoApplication using Java 21.0.6 with PID 15284 (C:\Users\user\Documents\Java Capgemini\Address Book Application\demo\target\classes started by Padmaja in C:\Users\user\Documents\Java Capgemini\Address Book Application\demo)
+2025-05-24 22:24:18 - The following 1 profile is active: "dev"
+2025-05-24 22:24:18 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-24 22:24:18 - Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2025-05-24 22:24:19 - Tomcat initialized with port 8087 (http)
+2025-05-24 22:24:19 - Starting service [Tomcat]
+2025-05-24 22:24:19 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-24 22:24:19 - Initializing Spring embedded WebApplicationContext
+2025-05-24 22:24:19 - Root WebApplicationContext: initialization completed in 281 ms
+2025-05-24 22:24:19 - HikariPool-10 - Starting...
+2025-05-24 22:24:19 - HikariPool-10 - Added connection conn63: url=jdbc:h2:mem:2b3ff3a4-2f69-44f7-a904-2a4d833c561d user=SA
+2025-05-24 22:24:19 - HikariPool-10 - Start completed.
+2025-05-24 22:24:19 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-24 22:24:19 - HHH000026: Second-level cache disabled
+2025-05-24 22:24:19 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-24 22:24:19 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-10)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-24 22:24:19 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-24 22:24:19 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 22:24:19 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addressBookController': Unsatisfied dependency expressed through field 'addressService': Error creating bean with name 'addressBookService' defined in file [C:\Users\user\Documents\Java Capgemini\Address Book Application\demo\target\classes\com\example\addressbookapp\service\AddressBookService.class]: Failed to instantiate [com.example.addressbookapp.service.AddressBookService]: Constructor threw exception
+2025-05-24 22:24:19 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 22:24:19 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-05-24 22:24:19 - HikariPool-10 - Shutdown initiated...
+2025-05-24 22:24:19 - HikariPool-10 - Shutdown completed.
+2025-05-24 22:24:19 - Stopping service [Tomcat]
+2025-05-24 22:24:19 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-05-24 22:24:19 - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addressBookController': Unsatisfied dependency expressed through field 'addressService': Error creating bean with name 'addressBookService' defined in file [C:\Users\user\Documents\Java Capgemini\Address Book Application\demo\target\classes\com\example\addressbookapp\service\AddressBookService.class]: Failed to instantiate [com.example.addressbookapp.service.AddressBookService]: Constructor threw exception
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1451) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1221) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1187) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1122) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.6.jar:6.2.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.6.jar:6.2.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351) ~[spring-boot-3.4.5.jar:3.4.5]
+	at com.example.addressbookapp.DemoApplication.main(DemoApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.5.jar:3.4.5]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'addressBookService' defined in file [C:\Users\user\Documents\Java Capgemini\Address Book Application\demo\target\classes\com\example\addressbookapp\service\AddressBookService.class]: Failed to instantiate [com.example.addressbookapp.service.AddressBookService]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1349) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1234) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1739) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1627) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.2.6.jar:6.2.6]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.addressbookapp.service.AddressBookService]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:222) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:122) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1343) ~[spring-beans-6.2.6.jar:6.2.6]
+	... 36 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The declared package "" does not match the expected package "com.example.addressbookapp.service"
+	Syntax error on token "*", Identifier expected
+
+	at com.example.addressbookapp.service.AddressBookService.<init>(AddressBookService.java:1) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:196) ~[spring-beans-6.2.6.jar:6.2.6]
+	... 38 common frames omitted
+2025-05-24 22:24:43 - Starting DemoApplication using Java 21.0.6 with PID 15284 (C:\Users\user\Documents\Java Capgemini\Address Book Application\demo\target\classes started by Padmaja in C:\Users\user\Documents\Java Capgemini\Address Book Application\demo)
+2025-05-24 22:24:43 - The following 1 profile is active: "dev"
+2025-05-24 22:24:43 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-24 22:24:43 - Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2025-05-24 22:24:44 - Tomcat initialized with port 8087 (http)
+2025-05-24 22:24:44 - Starting service [Tomcat]
+2025-05-24 22:24:44 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-24 22:24:44 - Initializing Spring embedded WebApplicationContext
+2025-05-24 22:24:44 - Root WebApplicationContext: initialization completed in 204 ms
+2025-05-24 22:24:44 - HikariPool-11 - Starting...
+2025-05-24 22:24:44 - HikariPool-11 - Added connection conn64: url=jdbc:h2:mem:1f667d02-857d-4531-b5f7-67c809187083 user=SA
+2025-05-24 22:24:44 - HikariPool-11 - Start completed.
+2025-05-24 22:24:44 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-24 22:24:44 - HHH000026: Second-level cache disabled
+2025-05-24 22:24:44 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-24 22:24:44 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-11)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-24 22:24:44 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-24 22:24:44 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 22:24:44 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-24 22:24:44 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:1f667d02-857d-4531-b5f7-67c809187083'
+2025-05-24 22:24:44 - LiveReload server is running on port 35729
+2025-05-24 22:24:44 - Tomcat started on port 8087 (http) with context path '/'
+2025-05-24 22:24:44 - Started DemoApplication in 0.42 seconds (process running for 1058.294)
+2025-05-24 22:24:44 - Condition evaluation unchanged
+2025-05-24 22:24:46 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-24 22:24:46 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-24 22:24:46 - Graceful shutdown complete
+2025-05-24 22:24:46 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 22:24:46 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-05-24 22:24:46 - HikariPool-11 - Shutdown initiated...
+2025-05-24 22:24:46 - HikariPool-11 - Shutdown completed.
+2025-05-24 22:24:46 - Starting DemoApplication using Java 21.0.6 with PID 15284 (C:\Users\user\Documents\Java Capgemini\Address Book Application\demo\target\classes started by Padmaja in C:\Users\user\Documents\Java Capgemini\Address Book Application\demo)
+2025-05-24 22:24:46 - The following 1 profile is active: "dev"
+2025-05-24 22:24:46 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-24 22:24:46 - Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2025-05-24 22:24:46 - Tomcat initialized with port 8087 (http)
+2025-05-24 22:24:46 - Starting service [Tomcat]
+2025-05-24 22:24:46 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-24 22:24:46 - Initializing Spring embedded WebApplicationContext
+2025-05-24 22:24:46 - Root WebApplicationContext: initialization completed in 204 ms
+2025-05-24 22:24:46 - HikariPool-12 - Starting...
+2025-05-24 22:24:46 - HikariPool-12 - Added connection conn74: url=jdbc:h2:mem:b2b08df0-8fa3-4056-a6a6-2c82adc7e904 user=SA
+2025-05-24 22:24:46 - HikariPool-12 - Start completed.
+2025-05-24 22:24:46 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-24 22:24:46 - HHH000026: Second-level cache disabled
+2025-05-24 22:24:46 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-24 22:24:46 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-12)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-24 22:24:47 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-24 22:24:47 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 22:24:47 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-24 22:24:47 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:b2b08df0-8fa3-4056-a6a6-2c82adc7e904'
+2025-05-24 22:24:47 - LiveReload server is running on port 35729
+2025-05-24 22:24:47 - Tomcat started on port 8087 (http) with context path '/'
+2025-05-24 22:24:47 - Started DemoApplication in 0.416 seconds (process running for 1061.186)
+2025-05-24 22:24:47 - Condition evaluation unchanged
+2025-05-24 22:24:59 - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-05-24 22:24:59 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-24 22:24:59 - Graceful shutdown complete
+2025-05-24 22:24:59 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 22:24:59 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-05-24 22:24:59 - HikariPool-12 - Shutdown initiated...
+2025-05-24 22:24:59 - HikariPool-12 - Shutdown completed.
+2025-05-24 22:24:59 - Starting DemoApplication using Java 21.0.6 with PID 15284 (C:\Users\user\Documents\Java Capgemini\Address Book Application\demo\target\classes started by Padmaja in C:\Users\user\Documents\Java Capgemini\Address Book Application\demo)
+2025-05-24 22:24:59 - The following 1 profile is active: "dev"
+2025-05-24 22:24:59 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-24 22:24:59 - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2025-05-24 22:24:59 - Tomcat initialized with port 8087 (http)
+2025-05-24 22:24:59 - Starting service [Tomcat]
+2025-05-24 22:24:59 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-24 22:24:59 - Initializing Spring embedded WebApplicationContext
+2025-05-24 22:24:59 - Root WebApplicationContext: initialization completed in 226 ms
+2025-05-24 22:24:59 - HikariPool-13 - Starting...
+2025-05-24 22:24:59 - HikariPool-13 - Added connection conn84: url=jdbc:h2:mem:542bd56c-7f27-433f-a30d-d62b21407202 user=SA
+2025-05-24 22:24:59 - HikariPool-13 - Start completed.
+2025-05-24 22:24:59 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-24 22:24:59 - HHH000026: Second-level cache disabled
+2025-05-24 22:24:59 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-24 22:24:59 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-13)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-24 22:25:00 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-24 22:25:00 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 22:25:00 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-24 22:25:00 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:542bd56c-7f27-433f-a30d-d62b21407202'
+2025-05-24 22:25:00 - LiveReload server is running on port 35729
+2025-05-24 22:25:00 - Tomcat started on port 8087 (http) with context path '/'
+2025-05-24 22:25:00 - Started DemoApplication in 0.466 seconds (process running for 1074.215)
+2025-05-24 22:25:00 - Condition evaluation unchanged
+2025-05-24 22:25:24 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-24 22:25:24 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-24 22:25:24 - Graceful shutdown complete
+2025-05-24 22:25:24 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 22:25:24 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-05-24 22:25:24 - HikariPool-13 - Shutdown initiated...
+2025-05-24 22:25:24 - HikariPool-13 - Shutdown completed.
+2025-05-24 22:25:25 - Starting DemoApplication using Java 21.0.6 with PID 15284 (C:\Users\user\Documents\Java Capgemini\Address Book Application\demo\target\classes started by Padmaja in C:\Users\user\Documents\Java Capgemini\Address Book Application\demo)
+2025-05-24 22:25:25 - The following 1 profile is active: "dev"
+2025-05-24 22:25:25 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-24 22:25:25 - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2025-05-24 22:25:25 - Tomcat initialized with port 8087 (http)
+2025-05-24 22:25:25 - Starting service [Tomcat]
+2025-05-24 22:25:25 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-24 22:25:25 - Initializing Spring embedded WebApplicationContext
+2025-05-24 22:25:25 - Root WebApplicationContext: initialization completed in 194 ms
+2025-05-24 22:25:25 - HikariPool-14 - Starting...
+2025-05-24 22:25:25 - HikariPool-14 - Added connection conn94: url=jdbc:h2:mem:bc629796-8c91-4d88-92ea-844dea49967c user=SA
+2025-05-24 22:25:25 - HikariPool-14 - Start completed.
+2025-05-24 22:25:25 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-24 22:25:25 - HHH000026: Second-level cache disabled
+2025-05-24 22:25:25 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-24 22:25:25 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-14)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-24 22:25:25 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-24 22:25:25 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 22:25:25 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-24 22:25:25 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bc629796-8c91-4d88-92ea-844dea49967c'
+2025-05-24 22:25:25 - LiveReload server is running on port 35729
+2025-05-24 22:25:25 - Tomcat started on port 8087 (http) with context path '/'
+2025-05-24 22:25:25 - Started DemoApplication in 0.44 seconds (process running for 1099.536)
+2025-05-24 22:25:25 - Condition evaluation unchanged
+2025-05-24 22:25:37 - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-05-24 22:25:37 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-24 22:25:37 - Graceful shutdown complete
+2025-05-24 22:25:37 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 22:25:37 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-05-24 22:25:37 - HikariPool-14 - Shutdown initiated...
+2025-05-24 22:25:37 - HikariPool-14 - Shutdown completed.
+2025-05-24 22:25:37 - Starting DemoApplication using Java 21.0.6 with PID 15284 (C:\Users\user\Documents\Java Capgemini\Address Book Application\demo\target\classes started by Padmaja in C:\Users\user\Documents\Java Capgemini\Address Book Application\demo)
+2025-05-24 22:25:37 - The following 1 profile is active: "dev"
+2025-05-24 22:25:37 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-24 22:25:37 - Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2025-05-24 22:25:37 - Tomcat initialized with port 8087 (http)
+2025-05-24 22:25:37 - Starting service [Tomcat]
+2025-05-24 22:25:37 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-24 22:25:37 - Initializing Spring embedded WebApplicationContext
+2025-05-24 22:25:37 - Root WebApplicationContext: initialization completed in 234 ms
+2025-05-24 22:25:37 - HikariPool-15 - Starting...
+2025-05-24 22:25:37 - HikariPool-15 - Added connection conn104: url=jdbc:h2:mem:08f79fc6-fb25-41eb-b272-09f20bed313e user=SA
+2025-05-24 22:25:37 - HikariPool-15 - Start completed.
+2025-05-24 22:25:37 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-24 22:25:37 - HHH000026: Second-level cache disabled
+2025-05-24 22:25:37 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-24 22:25:37 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-15)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-24 22:25:37 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-24 22:25:37 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 22:25:37 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-24 22:25:37 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:08f79fc6-fb25-41eb-b272-09f20bed313e'
+2025-05-24 22:25:37 - LiveReload server is running on port 35729
+2025-05-24 22:25:37 - Tomcat started on port 8087 (http) with context path '/'
+2025-05-24 22:25:37 - Started DemoApplication in 0.465 seconds (process running for 1111.715)
+2025-05-24 22:25:37 - Condition evaluation unchanged
+2025-05-24 22:25:44 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-24 22:25:44 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-24 22:25:44 - Graceful shutdown complete
+2025-05-24 22:25:44 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 22:25:44 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-05-24 22:25:44 - HikariPool-15 - Shutdown initiated...
+2025-05-24 22:25:44 - HikariPool-15 - Shutdown completed.
+2025-05-24 22:25:44 - Starting DemoApplication using Java 21.0.6 with PID 15284 (C:\Users\user\Documents\Java Capgemini\Address Book Application\demo\target\classes started by Padmaja in C:\Users\user\Documents\Java Capgemini\Address Book Application\demo)
+2025-05-24 22:25:44 - The following 1 profile is active: "dev"
+2025-05-24 22:25:44 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-24 22:25:44 - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2025-05-24 22:25:44 - Tomcat initialized with port 8087 (http)
+2025-05-24 22:25:44 - Starting service [Tomcat]
+2025-05-24 22:25:44 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-24 22:25:44 - Initializing Spring embedded WebApplicationContext
+2025-05-24 22:25:44 - Root WebApplicationContext: initialization completed in 220 ms
+2025-05-24 22:25:44 - HikariPool-16 - Starting...
+2025-05-24 22:25:44 - HikariPool-16 - Added connection conn114: url=jdbc:h2:mem:b4a0f9e4-2bdd-4a4c-9e17-4344871d875c user=SA
+2025-05-24 22:25:44 - HikariPool-16 - Start completed.
+2025-05-24 22:25:44 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-24 22:25:44 - HHH000026: Second-level cache disabled
+2025-05-24 22:25:44 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-24 22:25:44 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-16)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-24 22:25:44 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-24 22:25:44 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 22:25:44 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-24 22:25:44 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:b4a0f9e4-2bdd-4a4c-9e17-4344871d875c'
+2025-05-24 22:25:44 - LiveReload server is running on port 35729
+2025-05-24 22:25:44 - Tomcat started on port 8087 (http) with context path '/'
+2025-05-24 22:25:44 - Started DemoApplication in 0.484 seconds (process running for 1118.796)
+2025-05-24 22:25:44 - Condition evaluation unchanged
+2025-05-24 22:26:08 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-24 22:26:08 - Initializing Servlet 'dispatcherServlet'
+2025-05-24 22:26:08 - Completed initialization in 1 ms
+2025-05-24 22:28:59 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-24 22:28:59 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-24 22:28:59 - Graceful shutdown complete
+2025-05-24 22:28:59 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-24 22:28:59 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-05-24 22:28:59 - HikariPool-16 - Shutdown initiated...
+2025-05-24 22:28:59 - HikariPool-16 - Shutdown completed.

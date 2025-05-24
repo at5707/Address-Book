@@ -1,5 +1,7 @@
 package com.example.addressbookapp.service;
 
+import com.example.addressbookapp.*;
+
 import com.example.addressbookapp.dto.AddressBookDTO;
 import com.example.addressbookapp.model.AddressBookData;
 import org.springframework.stereotype.Service;
@@ -45,4 +47,9 @@ public class AddressBookService implements IAddressBookService {
     public void delete(int id) {
         addressList.removeIf(e -> e.getId() == id);
     }
+
+	public Object create(AddressBookDTO dto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
