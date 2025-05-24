@@ -1,6 +1,11 @@
 package com.example.addressbookapp.dto;
-
+import lombok.Data;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Pattern;
+@Data
 public class AddressBookDTO {
+	@NotEmpty(message = "Name cannot be null or empty")
+    @Pattern(regexp = "^[A-Z][a-zA-Z\s]{2,}$", message = "Name is invalid")
     private String name;
     private String city;
     private String phoneNumber;

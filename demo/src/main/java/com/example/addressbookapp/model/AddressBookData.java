@@ -1,6 +1,11 @@
 package com.example.addressbookapp.model;
-
+import jakarta.persistence.*;
+import lombok.Data;
+@Data
+@Entity
 public class AddressBookData {
+	@Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
     private String city;
